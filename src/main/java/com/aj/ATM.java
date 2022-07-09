@@ -2,10 +2,6 @@ package com.aj;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class ATM
 {
     Scanner input = new Scanner(System.in);
@@ -60,8 +56,8 @@ public class ATM
 
     public void startATM()
     {
-        userAccount();
-        userPin();
+        int accountNo = userAccount();
+        int pin = userPin();
         getMainMenu();
     }
 
